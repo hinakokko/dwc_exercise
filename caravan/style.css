@@ -9,11 +9,27 @@ a {
   text-decoration: none;
 }
 
+header, nav, h2, .main-visual, footer {
+  font-family: Chalkduster, "Bradly Hand", Courier, "Segoe Print", sans-serif ;
+}
+
 header {
   width: 90%;
   padding: 15px 0;
   margin: 0 auto;
   text-align: center;
+  position: relative;
+}
+
+.social i {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.social {
+  position: absolute;
+  top: 22px;
+  right: 22px;
 }
 
 header .heading {
@@ -43,7 +59,7 @@ header .heading {
 .main-visual-content {
   width: 40%;
   height: 300px;
-  background-color: rgba(0,0,0,0.5); /* 背景色を半透明の黒にする */
+  background-color: rgba(0,0,0,0.5);
   text-align: center;
   padding-top: 105px;
 }
@@ -210,3 +226,73 @@ footer {
 .footer-text {
   color: #fff;
 }
+
+@media screen and (max-width: 425px) {
+  header{
+    width: 100%;
+  }
+
+  .nav-list {
+    width: 100%;
+  }
+
+  .nav-list-item {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .social {
+    display: none;
+  }
+
+    main {
+      width: 100%;
+      display: block;
+    }
+
+    .main-visual-conten {
+      width: 100%;
+    }
+
+    .blog {
+      width: 100%;
+      margin: 0;
+    }
+
+    .bolg-box{
+      padding-left: 2%;
+      padding-right: 2%;
+    }
+
+    .blog-image {
+      width: 49%;
+    }
+
+    .blog-text {
+      width: 49%;
+      padding-top: 5px;
+    }
+
+    .sideber {
+      width: 100%;
+    }
+
+    .sideber-contents {
+      padding-left: 3%;
+      padding-right: 3%;
+    }
+
+    .instagram-box {
+      width: 48%;
+      padding-top: 48%;
+    }
+
+    .instagram-box:nth-child(odd) {
+      margin-right: 4%;
+    }
+
+    .pagination {
+      margin-bottom: 50px;
+    }
+
+  }
